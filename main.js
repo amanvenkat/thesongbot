@@ -191,7 +191,7 @@ client.on("message", async(message) => {
         if(!serverQueue.connection)
             return message.channel.send("There is no music currently playing!");
         if(!message.member.voice.channel)
-            return message.channel.send("You need to be in a voice channel first!")
+            return message.channel.send("You need to be in a voice channel first!!")
 
         let nowPlaying = serverQueue.songs[0];
         let qMsg = `Now Playing: ${nowPlaying.title}\n------------------------------\n`
